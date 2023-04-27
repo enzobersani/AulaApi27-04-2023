@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen(x =>
     {
         Title = "WebAPI.Application",
         Version = "v1",
-        Description = "Bagui é doido memo!",
+        Description = "ApiWebEnzo",
     });
 });
 

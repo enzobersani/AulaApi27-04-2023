@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\facec.lab01\\source\\repos\\ApiAula\\ApiAula\\ApiAula.csproj",
+      "projectUniqueName": "C:\\Users\\facec.lab01\\Desktop\\ApiAula\\ApiAula\\ApiAula.csproj",
       "projectName": "ApiAula",
-      "projectPath": "C:\\Users\\facec.lab01\\source\\repos\\ApiAula\\ApiAula\\ApiAula.csproj",
+      "projectPath": "C:\\Users\\facec.lab01\\Desktop\\ApiAula\\ApiAula\\ApiAula.csproj",
       "packagesPath": "C:\\Users\\facec.lab01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\facec.lab01\\source\\repos\\ApiAula\\ApiAula\\obj\\",
+      "outputPath": "C:\\Users\\facec.lab01\\Desktop\\ApiAula\\ApiAula\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

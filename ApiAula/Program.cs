@@ -1,4 +1,10 @@
+using ApiAula.Interfaces;
+using ApiAula.Services;
+using Microsoft.OpenApi.Models;
+using SimpleInjector;
+
 var builder = WebApplication.CreateBuilder(args);
+var container = new Container();
 
 // Add services to the container.
 
@@ -12,11 +18,20 @@ builder.Services.AddSwaggerGen(x =>
     {
         Title = "WebAPI.Application",
         Version = "v1",
-        Description = "ApiWebEnzo",
     });
 });
 
+builder.Services.AddSimpleInjector(container, options =>
+{
+    options.AddAspNetCore().AddControllerActivation();
+});
+
+container.Register<IProdutoServico, ProdutoService>(Lifestyle.Scoped);
+
 var app = builder.Build();
+
+app.Services.UseSimpleInjector(container);
+container.Verify();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
